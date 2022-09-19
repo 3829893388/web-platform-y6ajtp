@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--
+      Need a visual blank slate?
+      Remove all code in `styles.css`!
+    -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="gov-theme-app" style="padding: 10px; max-width: unset">
+    <nav>
+      <a href="/" aria-current="page">Home</a>
+      <a href="/multiselect.html">Multiselect</a>
+    </nav>
+    <main>
+      <div class="gov-form-control">
+        <div
+          class="gov-multiselect"
+          aria-haspopup="listbox"
+          aria-owns="downshift-0-menu"
+          aria-expanded="false"
+          aria-controls="custom-select"
+          role="combobox"
+        >
+          <label class="gov-form-control__label" for="custom-select"
+            >Multiselect</label
+          >
+          <input
+            class="gov-form-control__input"
+            id="custom-select"
+            aria-autocomplete="list"
+            aria-controls="downshift-0-menu"
+            aria-labelledby="downshift-0-label"
+            autocomplete="off"
+            type="text"
+            role="searchbox"
+            value=""
+          />
+          <ul
+            class="gov-multiselect__options"
+            id="autocomplete=custom-select"
+            role="listbox"
+            aria-labelledby="downshift-0-label"
+          >
+            <li
+              class="gov-multiselect__option"
+              role="option"
+              aria-selected="false"
+              id="downshift-0-item-0"
+            >
+              Aluminium
+            </li>
+            <li
+              class="gov-multiselect__option"
+              role="option"
+              aria-selected="false"
+              id="downshift-0-item-1"
+            >
+              Hydrogen
+            </li>
+            <li
+              class="gov-multiselect__option"
+              role="option"
+              aria-selected="false"
+              id="downshift-0-item-2"
+            >
+              Mercury
+            </li>
+            <li
+              class="gov-multiselect__option"
+              role="option"
+              aria-selected="false"
+              id="downshift-0-item-3"
+            >
+              Magnesium
+            </li>
+            <li
+              class="gov-multiselect__option"
+              role="option"
+              aria-selected="false"
+              id="downshift-0-item-4"
+            >
+              Radium
+            </li>
+          </ul>
+        </div>
+        <div class="gov-select" style="display: none">
+          <select multiple="" id="custom-select" name="custom-select">
+            <option value="al">Aluminium</option>
+            <option value="h">Hydrogen</option>
+            <option value="hg">Mercury</option>
+            <option value="mg">Magnesium</option>
+            <option value="ra">Radium</option>
+          </select>
+          <span class="gov-form-control__message"></span>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

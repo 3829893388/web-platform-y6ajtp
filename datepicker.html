@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--
+      Need a visual blank slate?
+      Remove all code in `styles.css`!
+    -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="gov-theme-app" style="padding: 10px; max-width: unset">
+    <nav>
+      <a href="/" aria-current="page">Home</a>
+      <a href="/multiselect.html">Multiselect</a>
+    </nav>
+    <main>
+      <div
+        class="gov-calendar gov-js-calendar gov-calendar--standalone"
+        title="Datum od"
+        data-required="true"
+      >
+        <label class="gov-calendar__dropdown--label"> Datum od: </label>
+        <div class="gov-calendar__dropdown gov-calendar__dropdown-wide">
+          <input
+            type="text"
+            class="
+              gov-calendar__dropdown--input gov-calendar__dropdown--input-day
+            "
+            placeholder="den"
+            pattern="[0-9]{2}"
+            title="Den musí být ve formátu dd, např. 01"
+            maxlength="2"
+            required="${isRequired}"
+          />
+
+          <input
+            type="text"
+            class="
+              gov-calendar__dropdown--input gov-calendar__dropdown--input-month
+            "
+            placeholder="měsíc"
+            pattern="[0-9]{2}"
+            title="Měsíc musí být ve formátu mm, např. 01"
+            maxlength="2"
+            required="${isRequired}"
+          />
+
+          <input
+            type="text"
+            class="
+              gov-calendar__dropdown--input gov-calendar__dropdown--input-year
+            "
+            placeholder="rok"
+            pattern="[0-9]{4}"
+            title="Měsíc musí být ve formátu yyyy, např. 1990"
+            maxlength="4"
+            required="${isRequired}"
+          />
+
+          <button class="gov-calendar__dropdown--button">
+            <span class="u-sr-only"> Zobraz kalendář </span>
+          </button>
+        </div>
+        <div class="gov-calendar__container">
+          <h4>Dny a měsíce chybí, musí být dodáno Javascriptem</h4>
+          <div class="gov-calendar__header">
+            <button
+              class="gov-calendar__toggle gov-calendar__toggle--prev"
+              type="button"
+            ></button>
+            <div class="gov-calendar__title">
+              <span class="gov-calendar__title-day"></span>
+              <span class="gov-calendar__title-month"></span>
+              <span class="gov-calendar__title-year"></span>
+            </div>
+            <button
+              class="gov-calendar__toggle gov-calendar__toggle--next"
+              type="button"
+            ></button>
+          </div>
+          <div class="gov-calendar__body">
+            <table class="gov-calendar__days"></table>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
